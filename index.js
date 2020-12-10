@@ -1,14 +1,6 @@
-console.log('hola todo bien!')
+import MediaPlayer from './MediaPlayer.js'
+
 const video = document.querySelector('video')
-const button = document.querySelector('button')
-        
-function MediaPlayer(config) {
-    this.media = config.el;
-}
-
-MediaPlayer.prototype.play = function(){this.media.play()}
-
-
-
 const player = new MediaPlayer({el: video});
-button.onclick = () => player.play();
+const button = document.querySelector('button')
+button.onclick = () => player.togglePlay();
