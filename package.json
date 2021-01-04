@@ -1,16 +1,1 @@
-{
-"name": "cursoProfecional",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "live-server": "^1.2.1"
-  }
-}
+{"name":"cursoProfecional","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1","start":"live-server"},"keywords":[],"author":"","license":"ISC","devDependencies":{"eslint":"^7.15.0","live-server":"^1.2.1"}}

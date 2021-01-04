@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>call-apply-bind</title>
+    </head>
+    <body>
+        <a href="../ejercicios/">Go Back</a>
+        <p>Abre la consola Hola</p>
+
+				<ul>
+						<li><button class="call-to-action">Aprender</button></li>
+						<li><button class="call-to-action">Aprender Más</button></li>
+						<li><button class="call-to-action">!Nunca parar de aprender!</button></li>	
+			  </ul>
+
+        <script>
+            //Establece `this` usando `call`
+            function saludar() {
+                console.log(`Hola, Soy ${this.name} ${this.apellido}`);
+            }
+
+            const dav = {
+                name: "David",
+                apellido: "González"
+            };
+            saludar.call(dav);
+						// Establece this en una función con parametros 
+						function caminar(metros, direccion) {
+								 console.log(`${this.name} caminara ${metros} metros hacia ${direccion}`); 
+						}
+						caminar.call(dav, 400, 'norte');
+						// Establece this usando apply y pasar argumentos a la función
+						caminar.apply(dav, [800, 'noreste']);
+						
+					  //Establecer this en una nueva función usando bind
+												const david = {name: 'David', apellido: 'González'};
+												const davidSaluda = saludar.bind(david);
+												davidSaluda();
+						//Establecer this en una funcion con argumentos utilizando bind 
+						const davidCamina = caminar.bind(david, 2000, 'sur');
+										davidCamina();
+
+						//Cuándo utlizar call, apply y bind?
+						const buttons = document.getElementsByClassName('call-to-action');
+						//buttons.forEach(button => {
+							//							button.onclick = () => alert('Nunca Pares de Aprender!');
+						//});
+
+						//Los botones no son arreglos son NodeList
+						Array.prototype.forEach.call(buttons, button =>{
+														button.onclick = () => alert('Nunca Pares de Aprender!');
+						});
+				</script>
+			</body>
+</html>
+
