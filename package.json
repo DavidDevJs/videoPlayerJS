@@ -1,1 +1,22 @@
-{"name":"cursoProfecional","version":"1.0.0","description":"","main":"index.js","scripts":{"test":"echo \"Error: no test specified\" && exit 1","start":"live-server"},"keywords":[],"author":"","license":"ISC","devDependencies":{"eslint":"^7.15.0","live-server":"^1.2.1"}}
+{
+  "name": "cursoProfecional",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ejercicios/index.html ejercicios/typescript/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.17.0"
+  },
+  "browserslist": [
+    "last 1 chrome version"
+  ],
+  "dependencies": {
+    "node-forge": "^0.10.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
