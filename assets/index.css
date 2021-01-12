@@ -22,7 +22,7 @@ h1{
     font-size: 3.5rem;
     text-shadow: -4px 1px 1px #ff8902;
 }
-p{
+h1 + h2{
     text-align: center;
     margin: 0;
     color: white;
@@ -36,11 +36,21 @@ p{
 }
 
 .movie{
-    width: 85%;
-    max-width: 900px;
+    width: 90vw;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 button{
     margin: auto;
+}
+
+.comments {
+    font-size: 2rem;
+}
+
+.title-comments {
+    color: aqua;
+    text-align: center;
+    font-size: 3.5rem;
 }
