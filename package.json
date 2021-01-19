@@ -4,19 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel ejercicios/index.html ejercicios/typescript/index.html"
+    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.17.0"
+    "eslint": "^7.17.0",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.1.3"
   },
   "browserslist": [
-    "last 1 chrome version"
+    "last 1 Chrome version"
   ],
   "dependencies": {
-    "node-forge": "^0.10.0",
-    "parcel-bundler": "^1.12.4"
+    "node-forge": "^0.10.0"
   }
 }
