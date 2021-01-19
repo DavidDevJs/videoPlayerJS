@@ -1,10 +1,10 @@
 {
-  "name": "cursoProfecional",
+  "name": "videoPlayerJS",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html ejercicios/index.html ejercicios/**/*.html"
+    "start": "parcel index.html ejercicios/**/*.html"
   },
   "keywords": [],
   "author": "",
